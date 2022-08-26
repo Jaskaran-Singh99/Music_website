@@ -1,0 +1,372 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+}
+#home{
+    background-image:url(img-1.jpg);
+    background-size:cover;
+    background-position:center;
+    height:110vh;
+    animation-name:background-image;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+    animation-timing-function:step-end;
+}
+@keyframes background-image{
+    0%{
+        background-image:url(img-1.jpg);
+    }
+    33%{
+        background-image:url(img-2.jpg);
+    }
+    66%{
+        background-image:url(img-3.jpg);
+    }
+}
+.navbar{
+    display:flex;
+    background-color:black;
+    align-items: center;
+    color:white;
+}
+.nav{
+    flex-basis:70%;
+}
+.nav ul{
+    list-style:none;
+    
+}
+.nav li{
+    padding-top:16px;
+    padding-bottom:15px;
+    display:inline-block;
+
+}
+.nav li a{
+    color:#fff;
+    text-decoration:none;
+    padding-left:18px;
+    padding-right:18px;
+    font-size:15px;
+}
+.nav ul li:hover{
+    color:black;
+    background-color:rgba(170, 159, 159, 0.651);
+}
+.search{
+    flex-basis:28%;
+    align-items:center;
+    text-align:right;
+}
+.search img{
+    width:20px;
+    cursor:pointer;
+}
+
+#home .text{
+    position:absolute;
+    top:101%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    color:white;
+    font-weight:700;
+    font-size:15px
+}
+#home .special{
+    position:absolute;
+    top:93%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+#home .special{
+    color:white;
+    font-size:23px;
+}
+ #home .special::before{
+    content:'';
+    animation:text 10s infinite step-end;
+}
+@keyframes text{
+    0%{
+        content:"Los Angeles"
+    }
+    33%{
+        content:'New York'
+    }
+    66%{
+        content: 'Chicago';
+    }
+}
+.text::before{
+    content:'';
+    animation:phrase 10s infinite step-end;
+}
+@keyframes phrase{
+    0%{
+        content:"We had good times playing in beach"
+    }
+    33%{
+        content:'New York is the best city'
+    }
+    66%{
+        content: 'Thank You Chicago! A Night We Wont forget';
+    }
+}
+/* BAND */
+
+#band h1{
+    margin-top:100px;
+    margin-bottom:20px;
+    font-size:30px;
+    text-align:center;
+    font-weight:100;
+    letter-spacing:3px;
+}
+#band h5{
+    color:grey;
+    font-size:15px;
+    text-align:center;
+    font-style:italic;
+    font-weight:100;
+    margin-bottom:40px;
+}
+#band p{
+    text-align:justify;
+    margin:auto;
+    max-width:700px;
+    font-size:15px
+}
+
+
+.container{
+    display:flex;
+    justify-content: space-around;
+    max-width:800px;
+    margin: 100px auto;
+
+}
+.sub-container{
+    margin:auto;
+}
+.sub-container h2{
+    text-align:center;
+    margin-bottom:8px;
+    font-size:15px;
+    font-weight:100;
+}
+.sub-container img{
+    width:150px;
+
+}
+
+
+/* TOUR TICKETS */ 
+   
+
+#tour{
+    background-color: black;
+    padding:100px 0px
+}
+#tour h1{
+    color:white;
+    text-align:center;
+    font-size:30px;
+    letter-spacing:3px;
+    padding-top:80px;
+    margin-bottom:20px;
+    font-weight:100;
+}
+#tour h4{
+    color:grey;
+    text-align:center;
+    font-size:15px;
+    font-style:italic;
+    font-weight:100;
+}
+#tour ul{
+    background-color: white;
+    display:block;
+    margin-left:300px;
+    margin-top:50px;
+    max-width:800px;
+    list-style:none;
+    margin-bottom:100px;
+}
+#tour ul li{
+    padding:20px 400px 10px 10px;
+    color:rgb(138, 134, 134);
+    font-size:15px;
+    
+}
+.li{
+    border-bottom:1px solid #ccc;
+
+}
+.sold{
+    background-color:tomato;
+    color:white;
+    padding:4px;
+    margin-left:20px;
+}
+.number{
+    margin-left:650px;
+    border-radius:50%;
+    background-color: black;
+    color:#fff;
+    padding:3px 8px;
+}
+.town{
+    display:flex;
+    justify-content:space-around;
+    max-width:800px;
+    margin:auto;
+}
+.town img{
+    width:100%;
+}
+.town h3{
+    margin:15px 12px;
+    font-size:15px;
+    font-style:bold;
+}
+.town p{
+    margin:15px 12px;
+    font-size:15px;
+    font-style:italic;
+}
+.town .i{
+    margin:15px 12px;
+    color:rgb(161, 160, 160);
+    font-size:14px;
+    font-weight:100;
+    
+}
+.town p{
+    margin:15px 12px;
+
+}
+.town button{
+    margin:15px 12px;
+    padding:10px 25px;
+    color:white;
+    background:black;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.5s ease;
+}
+.town button:hover{
+    background-color: #ccc;
+    color:black;
+}
+.new-york, .paris ,.sans{
+    background-color:white;
+    max-width:250px;
+    height:400px;
+    text-align:left;
+}
+
+/*  CONTACT PAGE  */
+
+
+#contact{
+    margin:100px 0;
+}
+#contact h1{
+    font-size:30px;
+    font-weight:100;
+    letter-spacing:3px;
+    text-align:center;
+}
+#contact p{
+    font-size:15px;
+    color:grey;
+    margin:20px 0px;
+    text-align:center;
+    font-style:italic;
+}
+
+.contact-container{
+    display:flex;
+    max-width:1000px;
+    margin:50px auto;
+    align-items:center;
+   
+}
+.left h3{
+    display:inline-block;
+    font-size:16px;
+    font-weight:100;
+}
+.left img{
+    width:20px;
+    cursor:pointer;
+    margin-right:20px;
+    margin-top:10px;
+}
+.location, .phone, .email{
+    margin:15px 0;
+}
+.right{
+    flex-basis:40% ;
+}
+.left{
+    flex-basis:70%;
+}
+.right input{
+    padding:12px 15px;
+    border:1px solid #ccc;
+    font-size:15px;
+    text-align:left;
+    outline:none;
+    margin-right:60px;
+}  
+.long{
+    width:500px;
+    margin-top:3px;
+}
+.right button{
+    background-color:black;
+    color:white;
+    padding:12px 25px;
+    transition:0.5s ease;
+    border:none;
+    margin-top:5px;
+    font-size:15px;
+}
+.right button:hover{
+    background:rgb(187, 181, 181);
+    color:black;
+}
+
+
+/* FOOTER  */
+
+
+.footer-image{
+    margin:150px 0px;
+}
+.footer-image img{
+    width:100%;
+    filter:grayscale(50%);
+}
+
+.social-media{
+    text-align:center;
+
+}
+.social-media img{
+    margin-left:30px;
+    height:25px;
+    cursor:pointer;
+}
+.social-media img:hover{
+    filter:grayscale(100%)
+}
+
+.last{
+    text-align:center;
+    margin-top:30px;
+}
